@@ -1,0 +1,83 @@
+
+
+.title_text{
+    color:607274;
+    cursor:pointer;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:auto;
+    text-align:center;
+    font-size:70;
+    transition: 0.3s;
+}
+
+.title_text:hover{
+    color:799194;
+}
+
+.calendarbar{
+  display: grid;
+  padding-left:10%;
+  padding-right:10%;
+  grid-template-columns: 40% 60%;
+}
+
+.calendarimage{
+    width:90%;
+    float:left;
+    height:auto;
+    border-style:solid;
+    border-color:B2A59B;
+    border-width:.25vw;
+    cursor:pointer;
+}
+
+.calendarimage:hover{
+    border-color:a1958c;
+}
+
+.calendartext{
+    width:60%;
+    float:left;
+    color:383431;
+}
+
+.calendarheader{
+    cursor:pointer;
+}
+.calendarheader:hover{
+    color:4f4945;
+}
+
+.bar{
+    background-color:607274;
+    width:10%;
+    height:1%;
+    display:flex;
+    margin:auto;
+}
+
+.tabsbar{
+    padding-left:10%;
+    padding-right:10%;
+    display:grid;
+    height:50%;
+    grid-template-columns:auto auto auto;
+    grid-gap:1.5%;
+}
+
+.tab{
+    border-width:10%;
+    border-style:solid;
+    border-color:383431;
+    border-radius:10%;
+    background-color:a1958c;
+}
+
+.tabtext{
+    border-width:10%;
+    border-style: hidden hidden solid hidden;
+    border-color:383431;
+    border-radius:5%;
+    text-align:center;
+    color:FAEED1;
+}
