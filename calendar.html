@@ -18,7 +18,7 @@
             fs.readFile('calendardata/data.txt', (err, data) => {
             if (err) throw err;
             alert(data.toString());
-            }
+            });
         }
     </script>
         <h1 onClick="location.href = 'index.html';" class="title_text" style="font-family:DM Serif Display, sans-serif">Scholastic Leo</h1>
@@ -41,7 +41,7 @@
                 </h1>
             </div>
 
-            <div onclick="myFunction1();">Add Item</div><div onclick="alert('hey');">Add Item</div><div>Add Item</div>
+            <div onclick=myFunction1();>Add Item</div><div onclick="alert('hey');">Add Item</div><div onclick=myFunction();>Add Item</div>
         </div>
     </body>
 </html>
