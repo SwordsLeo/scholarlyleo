@@ -6,6 +6,17 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+    <script>
+        function testFunc(){
+            const fs = require('fs');
+        
+            fs.readFile('calendardata/data.txt', (err, data) => {
+            if (err) throw err;
+
+            alert(data.toString());
+            }
+        }
+    </script>
     <body style="background-color:DED0B6">
         <h1 onClick="location.href = 'index.html';" class="title_text" style="font-family:DM Serif Display, sans-serif">Scholastic Leo</h1>
         <div class="bar"></div>
@@ -27,7 +38,7 @@
                 </h1>
             </div>
 
-            <div>Add Item</div><div>Add Item</div><div>Add Item</div>
+            <div onclick="testFunc();">Add Item</div><div>Add Item</div><div>Add Item</div>
         </div>
     </body>
 </html>
