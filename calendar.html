@@ -15,9 +15,7 @@
         function myFunction(){
             fetch("calendardata/data.txt")
           .then((res) => res.text())
-          .then((text) => {
-             alert(text);
-           })
+          .then((text) => console.log(text))
           .catch((e) => console.error(e));
         }
     </script>
