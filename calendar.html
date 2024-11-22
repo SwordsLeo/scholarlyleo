@@ -7,40 +7,54 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body style="background-color:#DED0B6">
-        <script>
-        function myFunction1(){
-            console.log(2+3);
+    <script id="dragdrop">
+        function allowDrop(ev) {
+            ev.preventDefault();
+
         }
-            
-        function myFunction(){
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", test);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            const data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+
+        }
+    </script>
+        <script id="creating items">
+
+        /*function myFunction(){
             fetch("calendardata/data.txt")
           .then((res) => res.text())
           .then((text) => for line in ///I QUIT HERE 11/19/2024 (CONVERT DATA TO DIV LMAO GOOD LUCK
           .catch((e) => console.error(e));
-        }
+        }*/
     </script>
         <h1 onClick="location.href = 'index.html';" class="title_text" style="font-family:DM Serif Display, sans-serif">Scholastic Leo</h1>
         <div class="bar"></div>
         <div style="height:10%;"></div>
         <div class="tabsbar" id="tabs">
-            <div class="tab">
+            <div id="todotab" class="tab" ondrop="drop(Event)" ondragover="allowDrop(Event)">
                 <h1 style="background-color:#635c57;" class="tabtext">
                     To Do
                 </h1>
-                <pre class="item" >Physics         Due</pre>
+                <p id="drag1" draggable="true" ondragstart="drag(Event)" class="item">Physics</p>
             </div>
-            <div class="tab">
+            <div id="workingtab" class="tab" ondrop="drop(Event)" ondragover="allowDrop(Event)">
                 <h1 style="background-color:#d1ab00;" class="tabtext">
                     Working
                 </h1>
             </div>
-            <div class="tab">
+            <div id="donetab" class="tab" ondrop="drop(Event)" ondragover="allowDrop(Event)">
                 <h1 style="background-color:#259902;" class="tabtext">
                     Done
                 </h1>
             </div>
-
             <div onclick=myFunction1();>Add Item</div><div onclick="alert('hey');">Add Item</div><div onclick=myFunction();>Add Item</div>
+
         </div>
     </body>
 </html>
