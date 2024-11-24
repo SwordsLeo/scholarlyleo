@@ -1,1 +1,2 @@
-Subject:Math,Due:11/19/2024,Placement:todo
+Title:Math,Due:11/19/2024,Location:ToDo
+Title:Science,Due:11/20/2024,Location:Working
