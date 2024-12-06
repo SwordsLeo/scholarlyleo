@@ -73,15 +73,20 @@
                     }
                     if (a == 1) {
                         newItem.children[1].children[1].children[0].value = data[1];
-                        console.log(newItem.children[1].children[1].children[0]);
                     }
                     if (a == 2) {
                         newItem.children[2].innerHTML = data[1];
                         document.getElementById(data[1].trim()).appendChild(newItem);
                     }
+                    if (a==3) {
+                        newItem.style.backgroundColor = data[1];
+                    }
+                    if (a==4){
+                        newItem.style.fontFamily = data[1] + ", sans serif"
+                    }
                 }
 
-                newItem.removeAttribute('id');
+                newItem.id = "item" + (i+1);
                 newItem.style.visibility = 'visible';
                 newItem.style.position = 'relative';
             }
@@ -105,7 +110,7 @@
                 <h1 style="background-color:#259902;" class="tabtext">
                     Done
                 </h1>
-                <div id="drag1" draggable="true" contenteditable="true" ondragstart="drag(event)" ondragover="" ondrop="" class="item">UC Admissions
+                <div id="item0" draggable="true" contenteditable="true" ondragstart="drag(event)" ondragover="" ondrop="" class="item">UC Admissions
                     <div class="itempos2" contenteditable="false" style="cursor:pointer;"></div>
                     <div class="itempos3 tabitem" style="display:grid; grid-template-columns: auto auto; grid-template-rows: auto;">
                         <div style="font-family:Salsa, sans-serif" contenteditable="false">Due:</div>
