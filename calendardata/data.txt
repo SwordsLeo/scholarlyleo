@@ -1,3 +1,3 @@
-Title:Math,Due:2024-11-19,Location:ToDo,Color:#cc2400,Font:Playfair Display
-Title:Science,Due:2024-11-20,Location:Working,Color:#cc2400,Font:Salsa
-Title:Hello,Due:2023-11-22,Location:Done,Color:#cc2400,Font:Playfair Display
+Title:Math,Due:2024-11-19,Location:ToDo,Color:#a1958c,Font:Playfair Display
+Title:Science,Due:2024-11-20,Location:Working,Color:#a1958c,Font:Salsa
+Title:Hello,Due:2023-11-22,Location:Done,Color:#a1958c,Font:Playfair Display
